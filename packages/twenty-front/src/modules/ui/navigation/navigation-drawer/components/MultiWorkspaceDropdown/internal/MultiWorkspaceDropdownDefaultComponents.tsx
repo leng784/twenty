@@ -201,6 +201,14 @@ export const MultiWorkspaceDropdownDefaultComponents = () => {
         >
           <MenuItem LeftIcon={IconUserPlus} text={t`Invite user`} />
         </UndecoratedLink>
+        <UndecoratedLink
+          to="http://192.168.2.200:3000/user/login"
+          onClick={() => {
+            closeDropdown(MULTI_WORKSPACE_DROPDOWN_ID);
+          }}
+        >
+          <MenuItem text={t`Financial system`} />
+        </UndecoratedLink>
         <MenuItem LeftIcon={IconLogout} text={t`Log out`} onClick={signOut} />
       </DropdownMenuItemsContainer>
     </DropdownContent>
